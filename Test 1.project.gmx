@@ -41,6 +41,7 @@
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_door_open</sprite>
     </sprites>
+    <sprite>sprites\sprite10</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
