@@ -130,6 +130,15 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>image_angle = point_direction(x, y, mouse_x, mouse_y);
+
+
+
+if mouse_x&lt;x
+image_index = 1
+if mouse_x&gt;x
+image_index = 0
+
+
 </string>
           </argument>
         </arguments>

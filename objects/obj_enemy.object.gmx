@@ -65,12 +65,13 @@ move_towards_point(mouse_x, mouse_y, 2);
             <string>if instance_exists(obj_character)
 {
 
-if (distance_to_point(obj_character.x, obj_character.y) &lt;= 400) 
-//&amp;&amp; (collision_line( x, y, obj_character.x, obj_character.y, obj_wall, false, false ))
+if not      collision_line(x,y,obj_character.x,obj_character.y,obj_wall,1,1) 
+and not     collision_line(x,y,obj_character.x,obj_character.y,obj_door,1,1) 
+and        (distance_to_object(obj_character) &lt;= 400)  
+
 
     {
-    //mp_potential_step(obj_character.x, obj_character.y, 3 , false);
-    move_towards_point(obj_character.x, obj_character.y, 3);
+   mp_potential_step(obj_character.x, obj_character.y, 3,1);
     }
 }
 else
@@ -151,31 +152,31 @@ move_towards_point(mouse_x, mouse_y, 2);
     <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
-        <id>115</id>
+        <id>101</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
+        <functionname>action_move</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>000010000</string>
           </argument>
           <argument>
-            <kind>4</kind>
+            <kind>0</kind>
             <string>0</string>
           </argument>
         </arguments>
       </action>
     </event>
   </events>
-  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
@@ -186,5 +187,10 @@ move_towards_point(mouse_x, mouse_y, 2);
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>32,0</point>
+    <point>32,32</point>
+    <point>0,32</point>
+  </PhysicsShapePoints>
 </object>
