@@ -113,24 +113,24 @@ move_towards_point(mouse_x, mouse_y, 2);
     <event eventtype="4" ename="obj_door">
       <action>
         <libid>1</libid>
-        <id>101</id>
+        <id>115</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_move</functionname>
+        <functionname>action_bounce</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>000010000</string>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
           <argument>
-            <kind>0</kind>
+            <kind>4</kind>
             <string>0</string>
           </argument>
         </arguments>
