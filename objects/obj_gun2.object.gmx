@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>picked_up</string>
+            <string>global.gun_2_picked_up</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -73,7 +73,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>picked_up</string>
+            <string>global.gun_2_picked_up</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -135,6 +135,80 @@ image_angle = point_direction(x, y, mouse_x, mouse_y);
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.gun_2_ammo</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>can_play_gun_empty </string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>can_play_gun_empty </string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="0">
       <action>
@@ -179,7 +253,7 @@ image_angle = point_direction(x, y, mouse_x, mouse_y);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>picked_up</string>
+            <string>global.gun_2_picked_up</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -330,7 +404,7 @@ y= 415;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>picked_up</string>
+            <string>global.gun_2_picked_up</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -380,9 +454,6 @@ if mouse_x&lt;x
 image_index = 1
 if mouse_x&gt;x
 image_index = 0
-
-
-
 </string>
           </argument>
         </arguments>
@@ -419,7 +490,7 @@ image_index = 0
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>picked_up</string>
+            <string>global.gun_2_picked_up</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -499,7 +570,7 @@ image_index = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>picked_up</string>
+            <string>global.gun_2_picked_up</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -565,6 +636,34 @@ image_index = 0
         <arguments>
           <argument>
             <kind>0</kind>
+            <string>global.gun_2_ammo</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
             <string>can_shoot</string>
           </argument>
           <argument>
@@ -593,7 +692,7 @@ image_index = 0
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>picked_up</string>
+            <string>global.gun_2_picked_up</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -697,6 +796,29 @@ image_index = 0
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.gun_2_ammo -= 1;
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>424</id>
         <kind>2</kind>
         <userelative>0</userelative>
@@ -708,6 +830,35 @@ image_index = 0
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.gun_2_ammo = 0
+if can_play_gun_empty = 1
+
+{
+audio_play_sound(snd_gun_empty,1,false);
+alarm_set(1,10)
+can_play_gun_empty = 0
+
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>
