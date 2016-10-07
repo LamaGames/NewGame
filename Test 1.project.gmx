@@ -32,6 +32,7 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_character</sprite>
     <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_enemy_jumper</sprite>
     <sprite>sprites\spr_gun</sprite>
     <sprite>sprites\spr_gun2</sprite>
     <sprite>sprites\sprite4</sprite>
@@ -41,7 +42,6 @@
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_door_open</sprite>
     </sprites>
-    <sprite>sprites\sprite10</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -55,7 +55,8 @@
   <objects name="objects">
     <object>objects\obj_wall</object>
     <object>objects\obj_character</object>
-    <object>objects\obj_enemy</object>
+    <object>objects\obj_enemy_walker</object>
+    <object>objects\obj_enemy_jumper</object>
     <object>objects\obj_gun</object>
     <object>objects\obj_gun2</object>
     <object>objects\obj_bullet</object>
@@ -64,17 +65,19 @@
     <object>objects\obj_score</object>
     <object>objects\obj_ps</object>
     <object>objects\object10</object>
+    <object>objects\obj_exit_door</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
+    <room>rooms\rm_lvl2</room>
     <room>rooms\rm_gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
   <TutorialState>
-    <IsTutorial>-1</IsTutorial>
+    <IsTutorial>0</IsTutorial>
     <TutorialName>C:\Users\reggn_000\AppData\Local\GameMaker-Studio\tutorials\Particles\</TutorialName>
-    <TutorialPage>11</TutorialPage>
+    <TutorialPage>12</TutorialPage>
   </TutorialState>
 </assets>
